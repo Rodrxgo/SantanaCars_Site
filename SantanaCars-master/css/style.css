@@ -1,0 +1,183 @@
+/* Estilos personalizados */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 76px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/isabela-kronemberger-OegFhZfw6Ok-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
+
+/* Estilos para validação do formulário */
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-control:valid {
+    border-color: #198754;
+}
+
+.invalid-feedback {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+}
+
+.was-validated .form-control:invalid~.invalid-feedback {
+    display: block;
+}
+
+/* Estilos do Carrossel */
+.carousel {
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    /* Importante para manter a borda arredondada */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+}
+
+.carousel-item {
+    height: 600px;
+    background-color: #000;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-indicators {
+    margin-bottom: 1rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%;
+        /* Em telas menores, ocupa a largura disponível */
+    }
+
+    .carousel-item {
+        height: 400px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para a seção Sobre */
+#sobre img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-left: auto; /* Ajuda a empurrar a imagem para a direita */
+    display: block;
+}
+
+#sobre p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    #sobre .row {
+        flex-direction: column-reverse;
+    }
+    
+    #sobre img {
+        margin-bottom: 2rem;
+        margin-left: 0; /* Remove o margin-left em telas pequenas */
+    }
+}
